@@ -185,5 +185,93 @@
 	margin-left: 37px;
 }
 /*=== Header end ===*/
+/*==== Main start ====*/
+/*=== Inner start ===*/
+.inner {
+	background: url(../img/bg-inner.jpg) no-repeat center / cover;
+	padding: 165px 0 170px;
+}
+.inner .inner-title {
+	font-family: 'robotobold', sans-serif;
+	font-size: 48px;
+	line-height: 30px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.inner .inner-subtitle {
+	margin-bottom: 50px;
+}
+.inner.small-inner .inner-subtitle {
+	margin-bottom: 25px;
+}
+.inner.small-inner {
+	background: url(../img/bg-inner-small.jpg) no-repeat center / cover;
+	padding: 57px 0 67px;
+}
+.inner .inner-subtitle,
+.inner.small-inner .inner-subtitle {
+	font-family: 'robotomedium', sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.875rem;
+	color: #fff;
+	font-weight: normal;
+}	
+.search-wrap {
+	max-width: 671px;
+	margin: 0 auto;
+	position: relative;
+}
+.search-wrap .search-input {
+	width: 100%;
+	padding-left: 25px;
+	padding-right: 50px;
+	background-color: #fff;
+	height: 56px;
+	border-radius: 4px;
+	box-shadow: 1px 1px 10px rgba(100, 100, 100, .75);
+}
+.search-input::-webkit-input-placeholder {
+	color:#90a4ae;
+	font-family: 'robotomedium', sans-serif;
+	font-size: .875rem;
+	line-height: 1.875rem;
+	letter-spacing: .05em;
+	font-weight: normal;
+}
+.search-input::-moz-placeholder          {
+	color:#90a4ae;
+	font-family: 'robotomedium', sans-serif;
+	font-size: .875rem;
+	line-height: 1.875rem;
+	letter-spacing: .05em;
+	font-weight: normal;
+	}/* Firefox 19+ */
+.search-input:-moz-placeholder           {
+	color:#90a4ae;
+	font-family: 'robotomedium', sans-serif;
+	font-size: .875rem;
+	line-height: 1.875rem;
+	letter-spacing: .05em;
+	font-weight: normal;
+	}/* Firefox 18- */
+.search-input:-ms-input-placeholder      {
+	color:#90a4ae;
+	font-family: 'robotomedium', sans-serif;
+	font-size: .875rem;
+	line-height: 1.875rem;
+	letter-spacing: .05em;
+	font-weight: normal;
+}
+.search-wrap .search-btn {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: transparent;
+	color: #7c939f;
+	font-size: 1.25rem;
+}
+/*=== Inner end ===*/
+/*==== Main end ==== */
 
 /*==== Custom style end ====*/
