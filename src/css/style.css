@@ -51,3 +51,139 @@
     font-style: normal;
 	font-display: swap; 
 }
+/*==== Default classes start ====*/
+.bg-dark-blue {
+	background-color: #263238;
+}
+.bg-yellow {
+	background: #fcb322;
+}
+.bg-orange {
+	background: #ef6c00;
+}
+.bg-red {
+	background: #e74c3c;
+}
+.bg-green {
+	background: #8bc34a;
+}
+.text-center {
+	text-align: center;
+}
+.ml-auto {
+	margin-left: auto;
+}
+.mr-auto {
+	margin-right: auto;
+}
+.mt-auto {
+	margin-top: auto;
+}
+.mb-auto {
+	margin-bottom: auto;
+}
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+.my-auto {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.btn {
+	font-family: 'robotoregular', sans-serif;
+	font-size: .75rem;
+	line-height: 1.5rem;
+	color: #fff;
+	padding: 4px 17px;
+	border-radius: 4px;
+}
+/*==== Default classes end ====*/
+/*==== Custom style start ====*/
+/*=== Header start ===*/
+.header-top {
+	padding: 26px 0;
+}
+.header-top .need-help {
+	font-family: 'robotoregular', sans-serif;
+	font-size: .9375rem;
+	line-height: 1.5rem;
+	color: #546e7a;
+}
+.header-top .need-help span span {
+	color: #e95849;
+	margin-right: 5px;
+}
+.user-controls {
+	margin-left: 30px;
+	margin-right: 25px;
+}
+.dropdown-item + .dropdown-item {
+	margin-left: 16px;
+}
+.dropdown-item .dropdown-control {
+	background-color: #f5f5f5;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	position: relative;
+}
+.dropdown-item .dropdown-control i {
+	font-size: .875rem;
+	color: #a0a0a0;
+	cursor: pointer;
+}
+.dropdown-item .dropdown-control .notify-count {
+	position: absolute;
+	top: -8px;
+	right: -5px;
+	width: 18px;
+	line-height: 18px;
+	border-radius: 50%;
+	text-align: center;
+	font-family: 'open_sanssemibold', sans-serif;
+	font-size: .6875rem;
+	color: #fff;
+}
+.user-controls .user-dropdown-control {
+	margin-left: 20px;
+}
+.user-controls .user-dropdown-control .user-avatar {
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+.user-controls .user-info-wrap {
+	font-family: 'robotomedium', sans-serif;
+	font-size: .875rem;
+	line-height: 1.5rem;
+	color: #222;
+}
+.user-controls .user-info-wrap h6 .fa-chevron-down {
+	color: #707070;
+	margin-left: 10px;
+}
+.user-controls .user-info-wrap .balance {
+	font-family: 'robotobold', sans-serif;
+	color: #8bc34a;
+}
+.btn.login-btn {
+	margin-right: 8px;	
+	padding: 4px 24px;
+}
+.header-bottom {
+	padding: 16px 0;
+}
+.header-bottom .header-nav a {
+	font-family: 'robotomedium', sans-serif;
+	font-size: .875rem;
+	line-height: 1.875rem;
+	color: #fff;
+}
+.header-bottom .header-nav a + a {
+	margin-left: 37px;
+}
+/*=== Header end ===*/
+
+/*==== Custom style end ====*/
