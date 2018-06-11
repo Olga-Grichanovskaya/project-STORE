@@ -149,6 +149,54 @@
 	font-size: .875rem;
 	color: #8bc34a;
 }
+.default-chevron-list .category-item-count {
+	color: #90a4ae;
+}
+.card {
+    -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+       -moz-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+            box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+    -webkit-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+}
+.card:hover {
+    -webkit-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+       -moz-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+            box-shadow: 0 16px 20px rgba(216, 216, 216, .75);    
+}
+.card-img img{
+    width: 100%;
+}
+.card-description {
+    padding: 25px 20px;
+    border-bottom: 1px solid #e7ecf2;
+}
+.card-item-info .card-title{
+    display: block;
+}
+.card-item-info .card-category{
+    display: block;
+}
+.card-author-info {
+    padding: 16px 20px;
+}
+.card-author img {
+    width: 30px;
+    height: 30px;
+}
+.product-rating li{
+    display: inline-block;
+    font-size: 12px;
+    color: #ffa726;
+}
+.product-reviews-count::before {
+    content: '('
+}
+.product-reviews-count::after {
+    content: ')'
+}
 
 /* ==== Default component end ==== */
 /*==== Custom style start ====*/
@@ -338,6 +386,15 @@
 	font-size: 1.25rem;
 }
 /*=== Inner end ===*/
+/* === all-items === */
+.all-items-wrap .card {
+    margin-bottom: 30px;
+}
+.view-controls {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+/* === all-items end === */
 /*==== Main end ==== */
 
 /*==== Custom style end ====*/
