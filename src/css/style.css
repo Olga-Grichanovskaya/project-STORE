@@ -56,16 +56,22 @@
 	background-color: #263238;
 }
 .bg-yellow {
-	background: #fcb322;
+	background-color: #fcb322;
 }
 .bg-orange {
-	background: #ef6c00;
+	background-color: #ef6c00;
 }
 .bg-red {
-	background: #e74c3c;
+	background-color: #e74c3c;
 }
 .bg-green {
-	background: #8bc34a;
+	background-color: #8bc34a;
+}
+.bg-white {
+	background-color: #fff;
+}
+.border-grey {
+	border: 1px solid #dedede;
 }
 .text-center {
 	text-align: center;
@@ -99,6 +105,50 @@
 	border-radius: 4px;
 }
 /*==== Default classes end ====*/
+/* ==== Default component start ==== */
+.breadcrumb {
+	padding: 45px 0;
+}
+.breadcrumb > li {
+	display: inline-block;
+}
+.breadcrumb > li a {
+	font-family: 'robotoregular', sans-serif;
+	font-size: .9375rem;
+	color: #b0bec5;
+}
+.breadcrumb > li + li::before {
+    content: '-';
+    padding: 0 5px;
+    color: #8bc34a;
+}
+.breadcrumb > .active {
+    color: #263238;
+}
+.aside-section {
+    padding: 20px 30px 40px;
+}
+.aside-section + .aside-section {
+    margin-top: 30px;
+}
+.aside-title {
+	font-family: 'robotobold', sans-serif;
+	font-size: 1.25rem;
+	color: #263238;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #dde3e8;
+    margin-bottom: 25px;
+}
+.default-chevron-list li + li {
+	margin-top: 25px;
+}
+.default-chevron-list > li i {
+	margin-right: 10px;
+	font-size: .875rem;
+	color: #8bc34a;
+}
+
+/* ==== Default component end ==== */
 /*==== Custom style start ====*/
 /*=== Header start ===*/
 .header-top {
