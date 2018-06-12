@@ -218,7 +218,7 @@
 	margin-left: 8px;
 }
 .pagination {
-	padding: 30px 0 7px;
+	padding: 30px 0 7pxg;
 }
 .pagination .page-item + .page-item {
 	margin-left: 10px;
@@ -430,6 +430,28 @@
 .view-controls {
     padding: 20px;
     margin-bottom: 30px;
+}
+.sort-by .fa-sort-amount-down {
+	font-size: .875rem;
+	color: #455a64;
+}
+.sort-by span {
+	font-family: 'robotoregular', sans-serif;
+	color: #707070;
+	margin: 0 13px;
+}
+.sort-by .fa-sort {
+	font-size: 1.125rem;
+	color: #707070;
+}
+.sort-view {
+	font-size: 1rem;
+}
+.sort-view .fa-th-large {
+	color: #8bc34a;
+}
+.sort-view .fa-th-list {
+	color: #90a4ae;
 }
 /* === all-items end === */
 /*==== Main end ==== */
