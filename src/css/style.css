@@ -208,6 +208,9 @@
 	font-family: 'robotoregular', sans-serif;
 	margin-left: 8px;
 }
+
+
+
 .pagination {
 	padding: 30px 0 7pxg;
 }
@@ -225,6 +228,8 @@
 	background-color: #e74c3c;
 	color: #fff;
 }
+
+.aside-section .card
 
 /* ==== Default component end ==== */
 /*==== Custom style start ====*/
@@ -431,6 +436,19 @@
 	color: #90a4ae;
 }
 /* === all-items end === */
+/* === Aside start === */
+.aside-section .card {
+	box-shadow: none;
+	border-bottom: 1px solid #dde3e8;
+}
+.aside-section .card .card-description {
+	padding: 15px 0;
+	border-bottom: none;
+}
+.aside-section .card .card-author-info {
+	padding: 0 0 25px;
+}
+/* === Aside end === */
 /*==== Main end ==== */
 
 /*==== Custom style end ====*/
