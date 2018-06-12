@@ -208,6 +208,23 @@
 	font-family: 'robotoregular', sans-serif;
 	margin-left: 8px;
 }
+.pagination {
+	padding: 30px 0 7px;
+}
+.pagination .page-item + .page-item {
+	margin-left: 10px;
+}
+.pagination .page-item .page-link {
+	font-family: 'robotomedium', sans-serif;
+	font-size: 1rem;
+	padding: 7px 16px;
+	background-color: #fff;
+}
+.page-item .page-link:hover,
+.page-item .page-link.page-link-active {
+	background-color: #e74c3c;
+	color: #fff;
+}
 
 /* ==== Default component end ==== */
 /*==== Custom style start ====*/
