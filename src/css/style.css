@@ -104,6 +104,13 @@
 	padding: 4px 17px;
 	border-radius: 4px;
 }
+.btn.btn-big {
+	font-family: 'robotomedium', sans-serif;
+	font-size: .9375rem;
+	width: 100%;
+	padding: 12px 0;
+	border-radius: 0;
+}
 /*==== Default classes end ====*/
 /* ==== Default component start ==== */
 .breadcrumb {
@@ -435,6 +442,12 @@
 }
 /* === all-items end === */
 /* === Aside start === */
+.aside-section .range-slider-wrap {
+	margin-bottom: 50px;
+}
+.aside-section .btn .fa-search {
+	margin-right: 10px;
+}
 .aside-section .card {
 	box-shadow: none;
 	border-bottom: 1px solid #dde3e8;
