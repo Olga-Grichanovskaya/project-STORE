@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <!-- Bootstrap grid -->
     <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <!-- ion range styles -->
+    <link rel="stylesheet" href="css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -149,6 +152,10 @@
                             <div class="aside-section bg-white border-grey">
                                 <h3 class="aside-title">Price Range</h3>
                                 <!-- /.aside-title -->
+                                <div class="range-slider-wrap">
+                                    <input type="text" id="price-range" name="price-range" value="" />
+                                </div>
+                                <!-- /.range-slider-wrap -->
                             </div>
                             <!-- /.aside-section -->
                             <div class="aside-section bg-white border-grey">
@@ -764,5 +771,9 @@
     crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- ion range slider -->
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- Init plugins -->
+    <script src="js/init.js"></script>
 </body>
 </html>
