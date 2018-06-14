@@ -111,6 +111,13 @@
 	padding: 12px 0;
 	border-radius: 0;
 }
+.btn.btn-in-dropdown {
+	font-family: 'robotobold', sans-serif;
+	font-size: .875rem;
+	color: #f4f6f5;
+	/* padding: 5px 15px; */
+	border-radius: 0;
+}
 /*==== Default classes end ====*/
 /* ==== Default component start ==== */
 .breadcrumb {
@@ -256,6 +263,9 @@
 	margin-left: 30px;
 	margin-right: 25px;
 }
+.dropdown-item {
+    position: relative;
+}
 .dropdown-item + .dropdown-item {
 	margin-left: 16px;
 }
@@ -271,6 +281,113 @@
 	color: #a0a0a0;
 	cursor: pointer;
 }
+.user-dropdown-control {
+	position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    z-index: 99;
+    border: 1px solid #d3d3d3;
+    min-width: 270px;
+	right: 0;
+	top: 32px !important;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, .2);
+}
+.dropdown-menu.show {
+    display: block;
+}
+.user-dropdown-control .dropdown-menu {
+	min-width: 160px;
+	padding: 25px 20px;
+	top: 25px !important;
+	left: 20px !important;
+}
+.user-dropdown-control .dropdown-menu .default-chevron-list li + li {
+	margin-top: 15px;
+}
+.user-dropdown-control .dropdown-menu .default-chevron-list li a {
+	font-family: 'robotoregular', sans-serif;
+	font-size: 0.75rem;
+	color: #546e7a;
+}
+.user-dropdown-control .dropdown-menu .default-chevron-list li i {
+	font-size: 0.g75rem;
+}
+.dropdown-menu .dropdown-notify-item {
+	padding: 18px 30px 22px;
+}
+.dropdown-menu .dropdown-notify-item + .dropdown-notify-item {
+	border: 1px solid #e0e0e0;
+}
+.dropdown-notify-item .notify-item-info {
+	font-family: 'robotoregular', sans-serif;
+	margin-left: 20px;
+	margin-top: 2px;
+	line-height: 1rem;
+}
+.dropdown-notify-item .notify-item-info .notify-author {
+	font-family: 'robotobold', sans-serif;
+	font-size: .75rem;
+	color: #263238;
+}
+.dropdown-notify-item .notify-item-info .notify-direction {
+	font-family: 'robotomedium', sans-serif;
+	font-size: .9375rem;
+	color: #263238;
+}
+.dropdown-notify-item .notify-item-info .notify-price {
+	font-family: 'robotomedium', sans-serif;
+	font-size: 1rem;
+	color: #000;
+}
+.dropdown-notify-item .notify-item-info h6 {
+	font-size: .75rem;
+	color: #84b743;
+}
+.dropdown-notify-item .notify-item-info .notify-date {
+	font-size: .625rem;
+	color: #707070;
+}
+.dropdown-notify-item i {
+	font-size: 1rem;
+	color: #b0bec5;
+	margin-top: 5px;
+}
+.dropdown-notify-item .fa-share {
+	transform: rotateY(180deg);
+}
+.dropdown-notify-item:hover .fa-bell {
+	color: #fcb322;
+}
+.dropdown-notify-item:hover .fa-share,
+.dropdown-notify-item:hover .fa-envelope {
+	color: #ef6c00;
+}
+.dropdown-notify-item:hover .dropdown-control i {
+	color: #263238;
+}
+.notify-item-info .notify-direction {
+	display: block;
+	margin-bottom: 5px;
+}
+.notify-item-info .notify-price {
+	display: block;
+	margin-top: 5px;
+}
+.total-info {
+	padding: 18px;
+}
+.total-info .total-info-wrap {
+	padding: 0 15px 10px;
+	font-family: 'robotobold', sans-serif;
+	font-size: 1rem;
+	color: #263238;
+}
+
+
+
 .dropdown-item .dropdown-control .notify-count {
 	position: absolute;
 	top: -8px;
@@ -297,6 +414,7 @@
 	font-size: .875rem;
 	line-height: 1.5rem;
 	color: #222;
+	cursor: pointer;
 }
 .user-controls .user-info-wrap h6 .fa-chevron-down {
 	color: #707070;
