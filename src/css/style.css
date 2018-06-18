@@ -132,7 +132,6 @@
 	font-family: 'robotobold', sans-serif;
 	font-size: .875rem;
 	color: #f4f6f5;
-	/* padding: 5px 15px; */
 	border-radius: 0;
 }
 .product-btn {
@@ -141,6 +140,33 @@
 	color: #f4f6f5;
 	border: 1px solid transparent; 
 	padding: 13px 24px;
+	transition: all .2s ease-in;
+}
+.product-btn.bg-red:hover {
+	color:  #e74c3c;
+	background-color: #fff;
+	border: 1px solid #e74c3c;
+}
+.product-btn.bg-dark-grey:hover {
+	color:  #455a64;
+	background-color: #fff;
+	border: 1px solid  #455a64;
+}
+.product-btn.bg-green:hover {
+	color:  #8bc34a;
+	background-color: #fff;
+	border: 1px solid  #8bc34a;
+}
+.btn.btn-to-profile {
+	font-size: 0.8125rem;
+	color: #707070;
+	padding: 4px 11px;
+	border-radius: 0;
+	transition: all .2s ease-in;
+}
+.btn.btn-to-profile:hover {
+	background-color: #707070;
+	color: #fff;
 }
 .breadcrumb {
 	padding: 45px 0;
@@ -518,7 +544,7 @@
 	letter-spacing: .05em;
 	font-weight: normal;
 }
-.search-input::-moz-placeholder          {
+.search-input::-moz-placeholder {
 	color:#90a4ae;
 	font-family: 'robotomedium', sans-serif;
 	font-size: .875rem;
@@ -526,7 +552,7 @@
 	letter-spacing: .05em;
 	font-weight: normal;
 	}/* Firefox 19+ */
-.search-input:-moz-placeholder           {
+.search-input:-moz-placeholder {
 	color:#90a4ae;
 	font-family: 'robotomedium', sans-serif;
 	font-size: .875rem;
@@ -534,7 +560,7 @@
 	letter-spacing: .05em;
 	font-weight: normal;
 	}/* Firefox 18- */
-.search-input:-ms-input-placeholder      {
+.search-input:-ms-input-placeholder {
 	color:#90a4ae;
 	font-family: 'robotomedium', sans-serif;
 	font-size: .875rem;
@@ -620,6 +646,8 @@
 	font-size: 1.125rem;
 	color: #fff;
 	text-align: center;
+	border: 1px solid transparent;
+	transition: all .2s ease-in;
 	padding: 12px 20px;
 }
 .product-social .product-link.facebook:hover {
@@ -642,7 +670,6 @@
 	background-color: #fff;
 	border: 1px solid #e74c3c; 
 }
-
 .product-description {
 	padding: 40px 0 45px;
 }
@@ -711,12 +738,25 @@
     background-color: #8bc34a;
 }
 /* product tabs end */
+.portfoliofolio-title {
+	font-family: 'robotomedium', sans-serif;
+	font-size: 1.125rem;
+}
 /* portfolio start */
 .portfolio {
 	padding: 30px 0 125px;
 }
 .portfolio-item {
+    box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+	transition: all .1s ease-in;
 	margin-bottom: 30px;
+}
+.portfolio-item:hover {
+    box-shadow: 0 16px 20px rgba(216, 216, 216, .75);    
+}
+.portfolio-item .portfolio-item-avatar img {
+	width: 100px;
+	height: 90px;
 }
 .portfolio-item .portfolio-item-info {
 	padding: 10px 20px;
@@ -754,11 +794,41 @@
 .aside-section.product-price .btn {
 	font-family: 'robotobold', sans-serif;
 	font-size: 1rem;
+	border: 1px solid transparent;
+	transition: all .2s ease-in;
+}
+.aside-section.product-price .btn.bg-green:hover {
+	color: #8bc34a;
+	background-color: #fff;
+	border: 1px solid #8bc34a;
+}
+.aside-section.product-price .btn.bg-dark-grey:hover {
+	color: #546e7a;
+	background-color: #fff;
+	border: 1px solid #546e7a;
+}
+.aside-section.product-price .btn.bg-sky:hover {
+	color: #42a5f5;
+	background-color: #fff;
+	border: 1px solid #42a5f5;
 }
 .aside-section.product-price .btn i {
 	margin-right: 7px;
 }
 /* product price end */
+.product-card-avatar img {
+	width: 75px;
+	height: 65px;
+}
+.product-card-author {
+	font-family: 'robotoregular', sans-serif;
+	font-size: 1.125rem;
+	line-height: 0.7rem;
+	margin-bottom: 25px;
+}
+.product-card-info {
+	margin-left: 14px;
+}
 .aside-section.sales-info {
 	font-family: 'robotoregular', sans-serif;
 	color: #707070;
