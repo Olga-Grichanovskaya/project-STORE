@@ -270,11 +270,9 @@
 	font-family: 'robotoregular', sans-serif;
 	margin-left: 8px;
 }
-
 .default-small-section {
 	padding: 20px 30px;
 }
-
 .pagination {
 	padding: 30px 0 7pxg;
 }
@@ -292,7 +290,6 @@
 	background-color: #e74c3c;
 	color: #fff;
 }
-
 /* ==== Default component end ==== */
 /*==== Custom style start ====*/
 /*=== Header start ===*/
@@ -415,9 +412,9 @@
 .dropdown-notify-item:hover .fa-envelope {
 	color: #ef6c00;
 }
-/* .dropdown-menu.show .dropdown-notify-item:hover .user-controls .dropdown-item .dropdown-control i{
+.dropdown-item.show .dropdown-control i {
 	color: #263238;
-} */
+}
 .notify-item-info .notify-direction {
 	display: block;
 	margin-bottom: 5px;
@@ -782,15 +779,35 @@
 .price-info {
 	margin-bottom: 30px;
 }
-.product-price {
+.price-info .product-price {
 	font-family: 'robotomedium', sans-serif;
 	font-size: 1.375rem;
 	color: #e74c3c;
 }
+.dropdown-product-price {
+	font-family: 'robotoregular', sans-serif;
+	font-size: 0.8125rem;
+	color: #70838d;
+	position: relative;
+}
+.dropdown-product-price .dropdown-control {
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.dropdown-product-price .dropdown-control .fa-caret-down {
+	font-size: .8125rem;
+	color: #8bc34a;
+	margin-left: 7px;
+}
+.dropdown-product-price .dropdown-menu {
+    min-width: 80px;
+    padding: 5px 10px;
+	left: 1px !important;
+	top: 0 !important;
+}
 .aside-section.product-price .btn + .btn {
 	margin-top: 10px;
 }
-
 .aside-section.product-price .btn {
 	font-family: 'robotobold', sans-serif;
 	font-size: 1rem;
