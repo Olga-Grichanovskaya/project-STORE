@@ -778,6 +778,57 @@
 }
 /* portfolio end */
 /* == Product-info end == */
+/* product price start */
+.price-info {
+	margin-bottom: 30px;
+}
+.product-price {
+	font-family: 'robotomedium', sans-serif;
+	font-size: 1.375rem;
+	color: #e74c3c;
+}
+.aside-section.product-price .btn + .btn {
+	margin-top: 10px;
+}
+
+.aside-section.product-price .btn {
+	font-family: 'robotobold', sans-serif;
+	font-size: 1rem;
+}
+.aside-section.product-price .btn i {
+	margin-right: 7px;
+}
+/* product price end */
+.aside-section.sales-info {
+	font-family: 'robotoregular', sans-serif;
+	color: #707070;
+}
+.aside-section.sales-info i {
+	font-size: 1.25rem;
+	color: #a6b5bb;
+}
+.aside-section.sales-info .sales-count {
+	font-family: 'robotobold', sans-serif;
+	font-size: 1.25rem;
+	color: #263238;
+	margin: 0 15px;
+}
+.product-brief-info {
+	font-family: 'robotoregular', sans-serif;
+	font-size: 0.875rem;
+	color: #70838d;
+}
+.product-brief-info > li:last-child > span {
+	display: block;
+} 
+.product-brief-info li + li {
+	margin-top: 15px;
+}
+.product-brief-info li span {
+	font-family: 'robotomedium', sans-serif;
+	color: #263238;
+	margin-right: 5px;
+}
 /* === Aside end === */
 /*==== Main end ==== */
 
