@@ -187,6 +187,14 @@
 .breadcrumb > .active {
     color: #263238;
 }
+.title {
+	font-family: 'robotobold', sans-serif;
+	font-size: 36px;
+	margin-bottom: 68px;
+}
+.default-section {
+	padding: 125px 0 110px;
+}
 .aside-section {
     padding: 20px 30px 40px;
 }
@@ -432,9 +440,6 @@
 	font-size: 1rem;
 	color: #263238;
 }
-
-
-
 .dropdown-item .dropdown-control .notify-count {
 	position: absolute;
 	top: -8px;
@@ -606,6 +611,51 @@
 	color: #90a4ae;
 }
 /* === all-items end === */
+/*=== Newest-release-prodcuts start ===*/
+.prodcuts-tabs > ul {
+	margin-bottom: 60px;
+}
+.prodcuts-tabs > ul li + li {
+	margin-left: 7px;
+}
+.prodcuts-tabs > ul li {
+	font-family: 'robotomedium', sans-serif;
+	font-size: 14px;
+	padding: 13px 22px;
+	background-color: #fff;
+}
+.prodcuts-tabs > ul li:hover,
+.prodcuts-tabs > ul li.ui-state-active  {
+	background-color: #e74c3c;
+	color: #fff;
+}
+
+.label {
+	position: relative;
+}
+.label > .card-in-trend {
+	position: absolute;
+	font-size: 18px;
+	color: #fff;
+	top: 15px;
+	left: 15px;
+}
+.label::before {
+	/*border: 30px solid transparent;	
+	border-left: 30px solid green; 
+	border-top: 30px solid green;*/
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 65px 65px 0 0;
+	border-color: #9ac16d transparent transparent transparent;
+	position: absolute;
+}
+
+/*=== Newest-release-prodcuts end ===*/
+
+
 /* === Aside start === */
 .aside-section .range-slider-wrap {
 	margin-bottom: 50px;

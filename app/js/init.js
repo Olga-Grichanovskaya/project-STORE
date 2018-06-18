@@ -1,4 +1,5 @@
 ;(function($) {
+    //init range
     $("#price-range").ionRangeSlider({
         type: "double",
         grid: false,
@@ -9,4 +10,6 @@
         prefix: "$",
         hide_min_max: true
     });
+     // init tabs
+    $( ".prodcuts-tabs" ).tabs();
 })(jQuery);
