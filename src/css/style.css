@@ -928,5 +928,15 @@
 }
 /* === Aside end === */
 /*==== Main end ==== */
+/* ==== Footer start ==== */
+#footer {
+	color: #fff;
+	padding-top: 115px;
+}
+
+.icon {
+	display: inline-block;
+}
+/* ==== Footer end ==== */
 
 /*==== Custom style end ====*/
