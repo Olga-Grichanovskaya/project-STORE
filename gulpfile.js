@@ -33,6 +33,7 @@ gulp.task('sprite', function () {
         .pipe(spritesmith({ // Настройка спрайта
             imgName: 'sprite.png',
             cssName: 'sprite.css',
+            padding: 2,
             imgPath: '../img/sprite.png'
         }));
 

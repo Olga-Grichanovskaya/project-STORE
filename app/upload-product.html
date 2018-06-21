@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">    
+    <!-- Bootstrap reboot -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <!-- Bootstrap grid -->
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <!-- ion range styles -->
+    <link rel="stylesheet" href="css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
+    <!-- Sprite style -->
+    <link rel="stylesheet" href="css/sprite.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-top container d-flex align-items-center">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <!-- /.logo -->
+            <div class="need-help ml-auto">
+                <span><span>Need help?</span>Talk to an expert:<a href="+61383766284"> +61 3 8376 6284</a></span>
+            </div>
+            <!-- /.need-help -->
+            <div class="user-controls d-flex align-items-center">
+                <div class="dropdown-item">
+                    <div class="dropdown-control d-flex" class="dropdownMenuLink" data-toggle="dropdown">
+                        <i class="far fa-bell mx-auto my-auto"><span class="notify-count bg-yellow">8</span></i>
+                    </div>
+                    <!-- /.dropdown-control -->
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-date">01 Dec, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-bell ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-date">01 Dec, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-bell ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <h6>Psd Template Help!</h6>
+                                <span class="notify-date">26 Nov, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-bell ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                    </div>
+                    <!-- .dropdown-menu -->
+                </div>
+                <!-- /.dropdown-item -->
+                <div class="dropdown-item">
+                    <div class="dropdown-control d-flex" class="dropdownMenuLink" data-toggle="dropdown">
+                        <i class="far fa-envelope mx-auto my-auto"><span class="notify-count bg-orange">5</span></i>
+                    </div>
+                    <!-- /.dropdown-control -->
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <span class="notify-author">Kazi Fahim</span>
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-date">01 Dec, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-envelope ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <span class="notify-author">Richi Lenal</span>
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-date">01 Dec, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-envelope ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <span class="notify-author">PsdBosS</span>
+                                <h6>Psd Template Help!</h6>
+                                <span class="notify-date">26 Nov, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="fas fa-share ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                    </div>
+                    <!-- .dropdown-menu -->                    
+                </div>
+                <!-- /.dropdown-item -->
+                <div class="dropdown-item">
+                    <div class="dropdown-control d-flex" class="dropdownMenuLink" data-toggle="dropdown">
+                        <i class="fas fa-shopping-cart mx-auto my-auto"><span class="notify-count bg-green">8</span></i>
+                    </div>
+                    <!-- /.dropdown-control -->
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar-square.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <span class="notify-direction">Grand Ballet</span>
+                                <h6>WordPress</h6>
+                                <span class="notify-price">$59</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar-square.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+ 
+                            <div class="notify-item-info">
+                                <span class="notify-direction">Apple Device</span>
+                                <h6>WordPress</h6>
+                                <span class="notify-price">$59</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <div class="total-info">
+                            <div class="total-info-wrap d-flex justify-content-around">
+                                <span>Total</span>
+                                <span class="ml-auto">$118</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-in-dropdown bg-green">Go to Cart</a>
+                                <a href="#" class="btn btn-in-dropdown bg-red">Go to Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .dropdown-menu -->  
+                </div>
+                <!-- /.dropdown-item -->
+                <!-- <div class="user-dropdown-control-wrap"> -->
+                <div class="user-dropdown-control d-flex align-items-center">
+                    <img src="img/user-avatar-img.png" alt="avatar" class="user-avatar">
+               
+                    <div class="user-info-wrap" class="dropdownMenuLink" data-toggle="dropdown">
+                        <h6>Mike Hussy<i class="fas fa-chevron-down"></i></h6>
+                        <span class="balance">$ 171.00</span>
+                    </div>
+                    <!-- /.user-info-wrap -->
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <ul class="default-chevron-list">
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#">Profile Page</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#">Account Settings</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#">Downloads</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#">Wishlist</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#">Upload Item</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#">Statement</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#">Withdraws</a>
+                            </li>
+                        </ul>
+                        <!-- /.default-chevron-list -->
+                    
+                    </div>
+                    <!-- .dropdown-menu -->  
+                </div>
+                <!-- /.user-dropdown-control -->
+            </div>
+            <!-- /.user-controls -->
+            <button class="btn logout-btn bg-red">Logout</button>
+        </div>
+        <!-- /.header-top -->
+    
+        <div class="header-bottom bg-dark-blue">
+            <div class="container">
+                <nav>
+                    <div class="header-nav">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">WordPress</a>
+                        <a href="#">Joomla</a>
+                        <a href="#">PSD</a>
+                        <a href="#">Plugins</a>
+                        <a href="#">Components</a>
+                        <a href="#">Pages</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Help</a>
+                    </div>
+                    <!-- /.header-nav -->
+                </nav>
+            </div>
+            <!-- /.container -->
+            
+        </div>
+        <!-- /.header-bottom -->
+    </header>
+    <!-- /#header -->
+    <main id="main">
+        <div class="inner small-inner">
+            <h2 class="inner-subtitle text-center">
+                <span>Premium WordPress Themes, Web Templates and Many More ...</span>
+            </h2>
+            <!-- /.inner-subtitle -->
+            <form>
+                <div class="search-wrap">
+                    <input class="search-input" type="text" name="search" id="search" placeholder="Search Your Keywords . . .">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <!-- /.search-wrap -->   
+            </form>
+        </div>
+        <!-- /.inner small-inner -->
+        <div class="content-wrapper">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Upload Product</li>
+                </ul>
+                <!-- /.breadcrumb -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.content-wrapper -->
+    </main>
+    <!-- /#main -->
+    <footer id="footer" class="bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h4 class="footer-title">About Company</h4>
+                    <p class="footer-text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus.</p>
+                    <div class="address d-flex">
+                        <i class="fas fa-map-marker-alt mb-auto"></i>
+                        <p>PO Box 16122 Collins Street West<br>
+                         Victoria 8007 Australia</p>
+                    </div>
+                    <div class="tel">
+                        <i class="fas fa-phone"></i><span>+61 3 8376 6284</span>
+                    </div>
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-3">
+                    <h4 class="footer-title">Join Our Community</h4>
+                    <ul class="default-chevron-list">
+                        <li>
+                            <i class="fas fa-chevron-right"></i><a href="#">Home</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i><a href="#">Forums</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i><a href="#">Become an Author</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i><a href="#">Community Meetups</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i><a href="#">Become an Affiliate</a>
+                        </li>
+                    </ul>
+                    <!-- /.default-chevron-list -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-3">
+                    <h4 class="footer-title">Need Help?</h4>
+                    <ul class="default-chevron-list">
+                        <li>
+                            <i class="fas fa-chevron-right"></i><a href="#">Help Center</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i><a href="#">Foxtar Market Terms</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i><a href="#">Author Terms</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i><a href="#">Foxtar Licenses</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i><a href="#">Contact Us</a>
+                        </li>    
+                    </ul>
+                    <!-- /.default-chevron-list -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-3">
+                    <h4 class="footer-title">Follow Us On</h4>
+                    <nav class="footer-social-nav">
+                        <a href="#" class="icon icon-fb-ic"></a>
+                        <a href="#" class="icon icon-twitter-ic"></a>
+                        <a href="#" class="icon icon-youtube-ic"></a>
+                        <a href="#" class="icon icon-pinterest-ic"></a>
+                        <a href="#" class="icon icon-linkedin-ic"></a>
+                    </nav>
+                    <h5 class="subscribe-title">Newsletter Sign Up!</h5>
+                    <div class="subscribe-form-wrapper">
+                        <form class="d-flex">
+                            <input type="email" name="email" id="email" placeholder="E-mail Address">
+                            <button type="submit"><i class="fas fa-location-arrow"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.col-3 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- .container -->
+        <div class="container-fluid copyright text-center">
+            <span>© 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
+        </div>
+    </footer>
+    <!-- /#footer -->
+   
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!-- Popper js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ion range slider -->
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- Init plugins -->
+    <script src="js/init.js"></script>
+</body>
+</html>
