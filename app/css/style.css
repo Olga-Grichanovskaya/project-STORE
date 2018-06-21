@@ -323,6 +323,17 @@
 	background-color: #e74c3c;
 	color: #fff;
 }
+.head-title {
+    padding: 18px 33px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.form-control {
+    width: 100%;
+    height: 40px;
+    padding: 0 17px;
+	border: 1px solid #dcdcdc;
+	background-color: #f9f9f9;
+}
 /* ==== Default component end ==== */
 /*==== Custom style start ====*/
 /*=== Header start ===*/
@@ -1028,6 +1039,18 @@
 	margin-right: 5px;
 }
 /* === Aside end === */
+/* === Product upload start === */
+.form-body {
+    padding-top: 40px;
+    padding-bottom: 65px;
+}
+.form-body label {
+    padding-left: 45px;
+}
+.form-body .row + .row {
+    margin-top: 20px;
+}
+/* === Product upload end ===*/
 /*==== Main end ==== */
 /* ==== Footer start ==== */
 #footer {

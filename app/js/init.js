@@ -1,6 +1,6 @@
 ;(function($) {
     //init range
-    $("#price-range").ionRangeSlider({
+    $('#price-range').ionRangeSlider({
         type: "double",
         grid: false,
         min: 0,
@@ -11,5 +11,8 @@
         hide_min_max: true
     });
      // init tabs
-    $( ".prodcuts-tabs" ).tabs();
+    $( '.prodcuts-tabs' ).tabs();
+    // Init jquery form stayler
+    $('.form-control, .input-file-styler').styler();
+  
 })(jQuery);

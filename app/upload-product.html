@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
     <!-- Sprite style -->
     <link rel="stylesheet" href="css/sprite.css">
+    <!-- jQuery form stayler -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,11 +35,11 @@
             <!-- /.need-help -->
             <div class="user-controls d-flex align-items-center">
                 <div class="dropdown-item">
-                    <div class="dropdown-control d-flex" class="dropdownMenuLink" data-toggle="dropdown">
+                    <div class="dropdown-control d-flex" id="dropdownMenuLink-help" data-toggle="dropdown">
                         <i class="far fa-bell mx-auto my-auto"><span class="notify-count bg-yellow">8</span></i>
                     </div>
                     <!-- /.dropdown-control -->
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink-help">
                         <a href="#" class="dropdown-notify-item d-flex">
                             <div class="notify-item-avatar">
                                 <img src="img/notify-avatar.png" alt="">
@@ -81,11 +84,11 @@
                 </div>
                 <!-- /.dropdown-item -->
                 <div class="dropdown-item">
-                    <div class="dropdown-control d-flex" class="dropdownMenuLink" data-toggle="dropdown">
+                    <div class="dropdown-control d-flex" id="dropdownMenuLink-mail" data-toggle="dropdown">
                         <i class="far fa-envelope mx-auto my-auto"><span class="notify-count bg-orange">5</span></i>
                     </div>
                     <!-- /.dropdown-control -->
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink-mail">
                         <a href="#" class="dropdown-notify-item d-flex">
                             <div class="notify-item-avatar">
                                 <img src="img/notify-avatar.png" alt="">
@@ -133,11 +136,11 @@
                 </div>
                 <!-- /.dropdown-item -->
                 <div class="dropdown-item">
-                    <div class="dropdown-control d-flex" class="dropdownMenuLink" data-toggle="dropdown">
+                    <div class="dropdown-control d-flex" id="dropdownMenuLink-order" data-toggle="dropdown">
                         <i class="fas fa-shopping-cart mx-auto my-auto"><span class="notify-count bg-green">8</span></i>
                     </div>
                     <!-- /.dropdown-control -->
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink-order">
                         <a href="#" class="dropdown-notify-item d-flex">
                             <div class="notify-item-avatar">
                                 <img src="img/notify-avatar-square.png" alt="">
@@ -183,12 +186,12 @@
                 <div class="user-dropdown-control d-flex align-items-center">
                     <img src="img/user-avatar-img.png" alt="avatar" class="user-avatar">
                
-                    <div class="user-info-wrap" class="dropdownMenuLink" data-toggle="dropdown">
+                    <div class="user-info-wrap" id="dropdownMenuLink-profile" data-toggle="dropdown">
                         <h6>Mike Hussy<i class="fas fa-chevron-down"></i></h6>
                         <span class="balance">$ 171.00</span>
                     </div>
                     <!-- /.user-info-wrap -->
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink-profile">
                         <ul class="default-chevron-list">
                             <li>
                                 <i class="fas fa-chevron-right"></i>
@@ -283,13 +286,149 @@
                     <li class="active">Upload Product</li>
                 </ul>
                 <!-- /.breadcrumb -->
+                <div class="upload-product-content bg-white border-grey">
+                    <form>
+                        <h3 class="head-title">Upload Your item</h3>
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="category">Select Category <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <select name="category" id="category" class="form-control">
+                                        <option value="">Category 1</option>
+                                        <option value="">Category 1</option>
+                                    </select>
+                                </div>
+                                <!-- ./col-8 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="product-name">Product Name <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="product-name" name="product-name" placeholder="Enter your product name here ...">
+                                </div>
+                                <!-- ./col-8 -->
+                            </div>
+                            <!-- /.row -->  
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="product-description">Product Description <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <textarea name="product-description" id="product-description" cols="30" rows="10" placeholder="<h1> Type your text  here </h1>"></textarea>
+                                </div>
+                                <!-- ./col-8 -->
+                            </div>
+                            <!-- /.row --> 
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="upload-file">Upload Main File <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="file" class="form-control" id="upload-file" name="upload-file" class="input-file-styler">
+                                </div>
+                                <!-- ./col-8 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="upload-screenshots">Upload Screenshots <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="file" class="form-control" id="upload-screenshots" name="upload-screenshots" class="input-file-styler">
+                                </div>
+                                <!-- ./col-8 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="file-included">File Included <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <select type="text" class="form-control" id="file-included" name="file-included" placeholder="Select File Type">
+                                        <option value="">file 1</option>
+                                        <option value="">file 2</option>
+                                    </select>
+                                </div>
+                                <!-- ./col-8 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="file-dimension">File Dimensions <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="file-dimension" name="file-dimension" placeholder="Enter the item  dimentionss here ...">
+                                </div>
+                                <!-- ./col-8 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="item-tag">Item Tags <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="item-tag" name="item-tag" placeholder="Enter tag here">
+                                </div>
+                                <!-- ./col-8 -->
+                            </div>
+                            <!-- /.row -->  
+                        </div>
+                        <!-- /.form-body -->
 
+                        <h3 class="head-title">Set Your Price (US$)</h3>
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="regular-license">Regular License <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="regular-license" name="regular-license" placeholder="$00.00">
+                                </div>
+                                <!-- ./col-8 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="extended-license">Extended License <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="extended-license" name="extended-license" placeholder="$00.00">
+                                </div>
+                                <!-- ./col-8 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-8 offset-md-3">
+                                    <button type="submit" class="btn btn-submit bg-green">Sumbit</button>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.form-body -->
+                    </form>
+                </div>
+                <!-- /.upload-product-content -->
             </div>
             <!-- /.container -->
         </div>
         <!-- /.content-wrapper -->
     </main>
     <!-- /#main -->
+   
     <footer id="footer" class="bg-dark-blue">
         <div class="container">
             <div class="row">
@@ -389,6 +528,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- ion range slider -->
     <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- jQuery form stayler -->
+    <script src="js/jquery.formstyler.min.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
 </body>
