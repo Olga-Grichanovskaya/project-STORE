@@ -51,6 +51,15 @@
     font-style: normal;
 	font-display: swap; 
 }
+
+@font-face {
+	font-family: 'MyriadProRegular';
+	src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"),
+		 url("../fonts/MyriadPro-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+}
 /*==== Default classes start ====*/
 .bg-dark-blue {
 	background-color: #263238;
@@ -303,6 +312,9 @@
 	color: #fff;
 }
 .head-title {
+	font-family: 'robotomedium', sans-serif;
+	font-size: 1.5rem;
+	color: #263238;
     padding: 18px 33px;
     border-bottom: 1px solid #d7d7d7;
 }
@@ -979,15 +991,24 @@
 }
 /* === Aside end === */
 /* === Product upload start === */
+.upload-product-content {
+	margin-bottom: 110px;
+}
 .form-body {
     padding-top: 40px;
     padding-bottom: 65px;
 }
-.form-body label {
-    padding-left: 45px;
-}
 .form-body .row + .row {
     margin-top: 20px;
+}
+.form-body label {
+	font-family: 'robotoregular', sans-serif;
+	font-size: .9375rem;
+	color: #444;
+    padding-left: 45px;
+}
+.form-body label sup {
+	color: #8bc34a;
 }
 /* === Product upload end ===*/
 /*==== Main end ==== */
