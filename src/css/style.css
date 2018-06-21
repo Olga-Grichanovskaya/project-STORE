@@ -900,6 +900,42 @@
 .product-card-info {
 	margin-left: 14px;
 }
+.product-author-nav {
+	margin-top: 25px;
+}
+.product-author-nav a + a {
+	margin-left: 5px;
+}
+.product-author-nav  .icon-smile-ic:hover {
+	background-image: url(../img/sprite.png);
+	background-position: 0px -74px;
+	width: 34px;
+	height: 37px;
+}
+.product-author-nav  .icon-pagelines-ic:hover {
+	background-image: url(../img/sprite.png);
+	background-position: 0px 0px;
+	width: 34px;
+	height: 37px;
+}
+.product-author-nav  .icon-bolt-ic:hover {
+	background-image: url(../img/sprite.png);
+	background-position: -102px -37px;
+	width: 34px;
+	height: 37px;
+}
+.product-author-nav  .icon-foursquare-ic:hover {
+	background-image: url(../img/sprite.png);
+	background-position: -68px 0px;
+	width: 34px;
+	height: 37px;
+}
+.product-author-nav  .icon-yen-sign-ic:hover {
+	background-image: url(../img/sprite.png);
+	background-position: 0px 0px;
+	width: 34px;
+	height: 37px;
+}
 .aside-section.sales-info {
 	font-family: 'robotoregular', sans-serif;
 	color: #707070;
