@@ -16,6 +16,12 @@
     if ($( '.prodcuts-tabs' ).length) {
         $( '.prodcuts-tabs' ).tabs();
     }
+    // init slick slider
+    $('.trending-products-slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4
+    })          
     // Init jquery form stayler
     if ($('.form-control, .input-file-styler').length) {
         $('.form-control, .input-file-styler').styler();

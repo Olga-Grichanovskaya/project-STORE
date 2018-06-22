@@ -1035,6 +1035,11 @@
 	color: #8bc34a;
 }
 /* === Product upload end ===*/
+/* Trending-products start */
+.trending-products-slider .card + .card {
+	margin-left: 30px;
+}
+/* Trending-products end */
 /* Why choose market start */
 .advantage-item:hover .advantage-img {
 	background-color: #d4d4d4;
