@@ -186,6 +186,17 @@
 	background-color: #707070;
 	color: #fff;
 }
+.btn.btn-be-author {
+	font-size: 1.125rem;
+	color: #263238;
+	border-radius: 0;
+	padding: 21px 38px;
+	transition: all .2s ease-in;
+}
+.btn.btn-be-author:hover {
+	color: #fff;
+	background-color: #b7b7b7;
+}
 .breadcrumb {
 	padding: 45px 0;
 }
@@ -1045,11 +1056,13 @@
 .advantage-text {
 	font-family: 'robotoregular', sans-serif;
 	font-size: .9375rem;
-	color: #b0bec5;
-	
+	color: #b0bec5;	
 }
 /* Why choose market end */
 /* Become Author start */
+.default-section.become-author {
+	padding: 130px 0 135px;
+}
 .decor-wrap {
     background: #b7b7b7;
     width: 1105px;
@@ -1059,7 +1072,27 @@
 	max-width: 656px;
 	padding: 70px 60px 80px;
 }
+.info-block p {
+	font-family: 'robotoregular', sans-serif;
+	font-size: 1.875rem;
+	color: #fff;
+	margin-right: 50px;
+}
+.info-block p span {
+	font-family: 'robotobold', sans-serif;
+	font-size: 1.875rem;
+}
 /* Become Author end */
+/* Free tutorials start */
+.default-section.free-tutorials {
+	padding: 115px 0 125px;
+}
+.tutorials-link {
+	font-family: 'robotobold', sans-serif;
+	font-size: 1.5rem;
+    padding: 40px 10px;
+}
+/* Free tutorials end */
 /*==== Main end ==== */
 /* ==== Footer start ==== */
 #footer {
