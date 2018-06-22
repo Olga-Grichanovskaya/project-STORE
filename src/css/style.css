@@ -94,8 +94,14 @@
 .bg-dark-grey {
 	background-color: #455a64;
 }
-.bg-light-beige {
+.bg-light-grey {
 	background-color: #f4f6f5;
+}
+.bg-beige {
+	background-color: #b5b5b5;
+}
+.bg-light-beige {
+	background-color: #f8f8f8;
 }
 .border-grey {
 	border: 1px solid #dedede;
@@ -1043,6 +1049,17 @@
 	
 }
 /* Why choose market end */
+/* Become Author start */
+.decor-wrap {
+    background: #b7b7b7;
+    width: 1105px;
+    height: 438px;
+}
+.info-block {
+	max-width: 656px;
+	padding: 70px 60px 80px;
+}
+/* Become Author end */
 /*==== Main end ==== */
 /* ==== Footer start ==== */
 #footer {
