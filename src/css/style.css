@@ -197,6 +197,19 @@
 	color: #fff;
 	background-color: #b7b7b7;
 }
+.btn.btn-new-items,
+.btn.btn-popular-items {
+	font-size: 1rem;
+	color: #263238;
+	border-radius: 0;
+	padding: 16px 33px;
+	box-shadow: 0 1px 3px rgba(205, 216, 228, .75)
+}
+.btn.btn-new-items:hover,
+.btn.btn-popular-items:hover {
+	color: #fff;
+	background-color: #e74c3c;
+}
 .breadcrumb {
 	padding: 45px 0;
 }
@@ -319,7 +332,7 @@
 	padding: 20px 30px;
 }
 .pagination {
-	padding: 30px 0 7pxg;
+	margin-top: 30px;
 }
 .pagination .page-item + .page-item {
 	margin-left: 10px;
@@ -354,6 +367,9 @@
 /*=== Header start ===*/
 .header-top {
 	padding: 26px 0;
+}
+.header-top .logo {
+	padding: 5px;
 }
 .header-top .need-help {
 	font-family: 'robotoregular', sans-serif;
@@ -632,7 +648,11 @@
 }
 /*=== Inner end ===*/
 /* === all-items === */
-.all-items-wrap .card {
+.all-items-wrap {
+	padding: 110px;
+}
+.all-items-wrap .card,
+.main-all-items-wrap .card {
     margin-bottom: 30px;
 }
 .view-controls {
@@ -657,12 +677,17 @@
 }
 .sort-view .fa-th-large {
 	color: #8bc34a;
+	cursor: pointer;
 }
 .sort-view .fa-th-list {
 	color: #90a4ae;
+	cursor: pointer;
 }
 /* === all-items end === */
 /*=== Newest-release-prodcuts start ===*/
+.prodcuts-tabs {
+	margin-bottom: 60px;
+}
 .prodcuts-tabs > ul {
 	margin-bottom: 60px;
 }
@@ -680,7 +705,6 @@
 	background-color: #e74c3c;
 	color: #fff;
 }
-
 .label {
 	position: relative;
 }
@@ -703,10 +727,10 @@
 	border-color: #9ac16d transparent transparent transparent;
 	position: absolute;
 }
-
+.sort-links a + a {
+	margin-left: 10px;
+}
 /*=== Newest-release-prodcuts end ===*/
-
-
 /* === Aside start === */
 .aside-section .range-slider-wrap {
 	margin-bottom: 50px;
@@ -1036,8 +1060,39 @@
 }
 /* === Product upload end ===*/
 /* Trending-products start */
-.trending-products-slider .card + .card {
-	margin-left: 30px;
+.default-section.trending-products {
+	padding-bottom: 190px;
+}
+.slick-slide {
+	padding: 15px;
+}
+.slick-slide .card {
+	margin-bottom: 0;
+}
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev {
+	display: none !important;
+}
+.slick-dots{
+	display: flex;
+	position: absolute;
+	left: 50%;
+	bottom: -75px;
+	transform: translateX(-50%);
+}
+.slick-dots li + li {
+	margin-left: 7px;
+}
+.slick-dots li button {
+	color: transparent;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #e8e8e8;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, .35) inset;
+}
+.slick-dots li.slick-active button {
+	background-color: #8bc34a;
 }
 /* Trending-products end */
 /* Why choose market start */
@@ -1069,9 +1124,10 @@
 	padding: 130px 0 135px;
 }
 .decor-wrap {
-    background: #b7b7b7;
-    width: 1105px;
-    height: 438px;
+	background: url(../img/bg-become-author.jpg);
+	max-width: 1105px;
+	padding: 115px 0;
+	box-shadow: 0 12px 29px rgba(0, 0, 0, .35);
 }
 .info-block {
 	max-width: 656px;
