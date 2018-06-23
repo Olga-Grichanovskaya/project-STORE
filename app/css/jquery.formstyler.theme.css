@@ -59,12 +59,6 @@
 }
 .jq-file {
 	width: 270px;
-	-webkit-border-radius: 4px;
-	   -moz-border-radius: 4px;
-	        border-radius: 4px;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);
-	   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1);
-	        box-shadow: 0 1px 2px rgba(0,0,0,.1);
 }
 .jq-file input {
 	cursor: pointer;
@@ -73,55 +67,36 @@
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-	width: 100%;
-	height: 34px;
+	width: 90px;
+	height: 25px;
 	padding: 0 80px 0 10px;
 	border: 1px solid #CCC;
 	border-bottom-color: #B3B3B3;
-	-webkit-border-radius: 4px;
-	   -moz-border-radius: 4px;
-	        border-radius: 4px;
 	background: #FFF;
-	-webkit-box-shadow: inset 1px 1px #F1F1F1;
-	   -moz-box-shadow: inset 1px 1px #F1F1F1;
-	        box-shadow: inset 1px 1px #F1F1F1;
-	font: 14px/32px Arial, sans-serif;
-	color: #333;
+	font: 12px/25px 'robotoregular', sans-serif;
+	color: #444;
 }
 .jq-file__browse {
 	position: absolute;
-	top: 1px;
-	right: 1px;
+	top: 8px;
+	left: 110px;
 	padding: 0 10px;
-	border-left: 1px solid #CCC;
-	-webkit-border-radius: 0 4px 4px 0;
-	   -moz-border-radius: 0 4px 4px 0;
-	        border-radius: 0 4px 4px 0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E6E6E6));
-	background: -webkit-linear-gradient(#FFF, #E6E6E6);
-	background: -moz-linear-gradient(#FFF, #E6E6E6);
-	background: -o-linear-gradient(#FFF, #E6E6E6);
-	background: linear-gradient(#FFF, #E6E6E6);
-	-webkit-box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0,0,0,.1);
-	   -moz-box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0,0,0,.1);
-	        box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0,0,0,.1);
-	font: 14px/32px Arial, sans-serif;
-	color: #333;
-	text-shadow: 1px 1px #FFF;
+	font: 12px/25px 'robotoregular', sans-serif;
+	color: #707070;
 }
-.jq-file:hover .jq-file__browse {
+/* .jq-file:hover .jq-file__browse {
 	background: -webkit-gradient(linear, left top, left bottom, from(#F6F6F6), to(#E6E6E6));
 	background: -webkit-linear-gradient(#F6F6F6, #E6E6E6);
 	background: -moz-linear-gradient(#F6F6F6, #E6E6E6);
 	background: -o-linear-gradient(#F6F6F6, #E6E6E6);
 	background: linear-gradient(#F6F6F6, #E6E6E6);
-}
-.jq-file:active .jq-file__browse {
+} */
+/* .jq-file:active .jq-file__browse {
 	background: #F5F5F5;
 	-webkit-box-shadow: inset 1px 1px 3px #DDD;
 	   -moz-box-shadow: inset 1px 1px 3px #DDD;
 	        box-shadow: inset 1px 1px 3px #DDD;
-}
+} */
 .jq-file.focused .jq-file__name {
 	border: 1px solid #5794BF;
 }
@@ -262,7 +237,7 @@
 .jq-selectbox__select {
 	height: 100%;
 	padding: 0 47px 0 17px;
-	border: 1px solid #dcdcdc;
+	/* border: 1px solid #dcdcdc; */
 	background-color: #f9f9f9;
 	font: 15px/40px 'MiriadProRegular', sans-serif;
 	color: #707070;
@@ -331,7 +306,7 @@
 	-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.2);
 	   -moz-box-shadow: 0 2px 10px rgba(0,0,0,.2);
 	        box-shadow: 0 2px 10px rgba(0,0,0,.2);
-	font: 14px/18px Arial, sans-serif;
+	font: 15px/18px 'MiriadProRegular', sans-serif;
 }
 .jq-selectbox__search {
 	margin: 5px;
@@ -367,7 +342,7 @@
 .jq-selectbox li {
 	min-height: 18px;
 	padding: 5px 10px 6px;
-	color: #231F20;
+	color: #707070;
 }
 .jq-selectbox li.selected {
 	background-color: #A3ABB1;

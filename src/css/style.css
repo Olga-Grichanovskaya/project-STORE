@@ -210,6 +210,12 @@
 	color: #fff;
 	background-color: #e74c3c;
 }
+.btn.btn-submit {
+	font-family: 'robotomedium', sans-serif;
+	font-size: .9375rem;
+	padding: 10px 30px;
+	border-radius: 0;
+}
 .breadcrumb {
 	padding: 45px 0;
 }
@@ -361,6 +367,9 @@
     padding: 0 17px;
 	border: 1px solid #dcdcdc;
 	background-color: #f9f9f9;
+}
+.form-control.select-styler {
+	padding: 0;
 }
 /* ==== Default component end ==== */
 /*==== Custom style start ====*/
@@ -1048,6 +1057,9 @@
 }
 .form-body .row + .row {
     margin-top: 20px;
+}
+.upload-product-content .form-body:last-child > .row:last-child {
+	margin-top: 40px;
 }
 .form-body label {
 	font-family: 'robotoregular', sans-serif;
