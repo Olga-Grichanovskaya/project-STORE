@@ -1,4 +1,9 @@
 ;(function($) {
+    //init slicknav
+    $('.header-nav').slicknav({
+        appendTo: '.header-bottom .container',
+        label: ''
+    });
     //init range
     if ($('#price-range').length) {
         $('#price-range').ionRangeSlider({

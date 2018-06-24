@@ -513,7 +513,6 @@
 .dropdown-item + .dropdown-item {
 	margin-left: 16px;
 }
-
 .dropdown-item .dropdown-control {
 	background-color: #f5f5f5;
 	width: 34px;
@@ -683,6 +682,7 @@
 }
 .header-bottom {
 	padding: 16px 0;
+	position: relative;
 }
 .header-bottom .header-nav a {
 	font-family: 'robotomedium', sans-serif;
@@ -698,8 +698,15 @@
         width: 100%;
         margin-left: 0;
         margin-top: 30px;
-    }
+	}
+		.header-bottom .header-nav {
+		display: none;
+	}
+	.slicknav_menu {
+		display: block;
+	}
 }
+
 /*=== Header end ===*/
 /*==== Main start ====*/
 /*=== Inner start ===*/
@@ -794,6 +801,7 @@
 	background-color: transparent;
 	color: #7c939f;
 	font-size: 1.25rem;
+	z-index: 900;
 }
 /*=== Inner end ===*/
 /* === all-items === */
