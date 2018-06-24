@@ -19,7 +19,7 @@
 </head>
 <body>
     <header id="header">
-        <div class="header-top container d-flex align-items-center">
+        <div class="header-top container d-flex align-items-center flex-wrap">
             <div class="logo">
                 <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             </div>
@@ -28,7 +28,7 @@
                 <span><span>Need help?</span>Talk to an expert:<a href="+61383766284"> +61 3 8376 6284</a></span>
             </div>
             <!-- /.need-help -->
-            <div class="user-controls d-flex align-items-center">
+            <div class="user-controls d-flex align-items-center justify-content-around justify-content-lg-start">
                 <div class="dropdown-item">
                     <div class="dropdown-control d-flex" id="dropdownMenuLink-help" data-toggle="dropdown">
                         <i class="far fa-bell mx-auto my-auto"><span class="notify-count bg-yellow">8</span></i>
@@ -227,9 +227,9 @@
                     <!-- .dropdown-menu -->  
                 </div>
                 <!-- /.user-dropdown-control -->
+                <button class="btn logout-btn bg-red">Logout</button>
             </div>
-            <!-- /.user-controls -->
-            <button class="btn logout-btn bg-red">Logout</button>
+            <!-- /.user-controls -->   
         </div>
         <!-- /.header-top -->
     
@@ -281,8 +281,13 @@
                     <li class="active">Product page</li>
                 </ul>
                 <!-- /.breadcrumb -->
+
+                <div class="overlay"></div>
+                <!-- /.overlay -->
+
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-12 col-lg-3 mobile-aside left">
+                        <button class="close-mobile-aside"><i class="fas fa-times"></i></button>
                         <aside id="aside">
                             <div class="aside-section bg-white border-grey">
                                 <h3 class="aside-title">Categories</h3>
@@ -452,16 +457,19 @@
                         </aside>
                         <!-- /#aside -->
                     </div>
-                    <!-- .col-md-3 -->
-                    <div class="col-md-9">
+                    <!-- .col-lg-3 -->
+                    <div class="col-12 col-lg-9">
                         <div class="view-controls bg-white border-grey d-flex">
-                            <div class="sort-by">
+                            <button class="mobile-aside-toggle">
+                                <i class="fab fa-elementor"></i>
+                            </button>
+                            <div class="sort-by my-auto">
                                 <a href="#"><i class="fas fa-sort-amount-down"></i></a>
                                 <span>Sort by: New Items</span>
                                 <a href="#"><i class="fas fa-sort"></i></a>
                             </div>
                             <!-- /.sort-by -->
-                            <div class="sort-view ml-auto">
+                            <div class="sort-view ml-auto my-auto">
                                 <a><i class="fa fa-th-large"></i></a>
                                 <a><i class="fa fa-th-list"></i></a>
                             </div>
@@ -469,7 +477,7 @@
                         </div>
                         <!-- /.view-controls -->
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#">
@@ -506,8 +514,8 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col-xl-4 -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#">
@@ -544,8 +552,8 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col-xl-4 -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#">
@@ -582,8 +590,8 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col-xl-4 -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#">
@@ -620,8 +628,8 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col-xl-4 -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#">
@@ -658,8 +666,8 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col-xl-4 -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#">
@@ -696,8 +704,8 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col-xl-4 -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#">
@@ -734,8 +742,8 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col-xl-4 -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#">
@@ -772,8 +780,8 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col-xl-4 -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#">
@@ -810,8 +818,8 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col-xl-4 -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#">
@@ -848,8 +856,8 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col-xl-4 -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#">
@@ -886,8 +894,8 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col-xl-4 -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#">
@@ -924,7 +932,7 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col-lg-4 -->
+                            <!-- /.col-xl-4 -->
                         </div>
                         <!-- /.row -->
                         <ul class="pagination d-flex">
@@ -935,7 +943,7 @@
                         </ul>
                         <!-- .pagination -->
                     </div>
-                    <!-- /.col-md-9 -->
+                    <!-- /.col-lg-9 -->
                 </div>
                 <!-- /.row -->
             </div>
@@ -1043,6 +1051,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- ion range slider -->
     <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- Aside js -->
+    <script src="js/aside.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
 </body>
