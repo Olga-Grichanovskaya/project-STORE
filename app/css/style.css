@@ -507,9 +507,6 @@
 .dropdown-item {
     position: relative;
 }
-.user-controls > .dropdown-item:last-child {
-	margin-right: 25px;
-}
 .dropdown-item + .dropdown-item {
 	margin-left: 16px;
 }
@@ -677,6 +674,7 @@
 	color: #8bc34a;
 }
 .btn.login-btn {
+	margin-left: 20px;
 	margin-right: 8px;	
 	padding: 4px 24px;
 }
@@ -699,11 +697,46 @@
         margin-left: 0;
         margin-top: 30px;
 	}
-		.header-bottom .header-nav {
+	.header-bottom .header-nav {
 		display: none;
 	}
 	.slicknav_menu {
 		display: block;
+	}
+	.dropdown-menu {
+		-webkit-transform: translate3d(-10px, 34px, 0px) !important;
+		   -moz-transform: translate3d(-10px, 34px, 0px) !important;
+		        transform: translate3d(-10px, 34px, 0px) !important;
+	}
+	.user-dropdown-control .dropdown-menu {
+		-webkit-transform: translate3d(-20px, 47px, 0px) !important;
+		   -moz-transform: translate3d(-20px, 47px, 0px) !important;
+		        transform: translate3d(-20px, 47px, 0px) !important;
+	}
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 576px) {
+	.header-top .need-help span span {
+		display: block;
+		margin-top: 10px;
+	}
+	.user-dropdown-control {
+		-webkit-box-ordinal-group: 2;
+		-webkit-order: 1;
+		   -moz-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
+		width: 100%;
+		margin: 20px 0;
+	}
+	.btn.logout-btn {
+		-webkit-box-ordinal-group: 3;
+		-webkit-order: 2;
+		   -moz-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
 	}
 }
 
@@ -1475,6 +1508,27 @@
 	font-family: 'robotoregular', sans-serif;
 	font-size: .9375rem;
 	color: #919699;
+}
+@media (max-width: 991px) {
+	#footer {
+		padding-top: 95px;
+	}
+	.footer-title {
+		margin-top: 20px;
+	}
+}
+@media (max-width: 767px) {
+	#footer .container .row .col-12 {
+		text-align: center;
+	}
+	.footer-title::before {
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		   -moz-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		     -o-transform: translateX(-50%);
+		        transform: translateX(-50%);
+	}
 }
 /* ==== Footer end ==== */
 
