@@ -749,8 +749,8 @@
 }
 .inner .inner-title {
 	font-family: 'robotobold', sans-serif;
-	font-size: 48px;
-	line-height: 30px;
+	font-size: 3rem;
+	line-height: 1.875rem;
 	color: #fff;
 	margin-bottom: 30px;
 }
@@ -835,6 +835,31 @@
 	color: #7c939f;
 	font-size: 1.25rem;
 	z-index: 900;
+}
+@media (max-width: 767px) {
+	.inner .inner-title {
+		font-size: 2.5rem;
+	}
+	.search-wrap {
+		max-width: 550px;
+	}
+}
+@media (max-width: 576px) {
+	.inner {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.inner .inner-title {
+		line-height: 3rem;
+	}
+	.inner .inner-subtitle,
+	.inner.small-inner .inner-subtitle {
+		font-size: 1.15rem;
+		padding: 0 15px;
+	}
+	.search-wrap {
+		max-width: 300px;
+	}
 }
 /*=== Inner end ===*/
 /* === all-items === */
