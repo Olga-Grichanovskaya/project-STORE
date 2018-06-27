@@ -377,6 +377,12 @@
 .close-mobile-aside {
     display: none;
 }
+@media (max-width: 1200px) {
+	.newest-release-prodcuts .card .card-author,
+	.trending-products .card .card-author {
+		width: 100%;
+	}
+}
 @media (max-width:991px) {
 	.mobile-aside-toggle {
 		display: block;
@@ -1196,6 +1202,15 @@
 }
 .form-body label sup {
 	color: #8bc34a;
+}
+@media (max-width: 767px) {
+	.form-body {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.upload-product-content .form-body:last-child > .row:last-child {
+		text-align: center;
+	}
 }
 /* === Product upload end ===*/
 /* Trending-products start */
