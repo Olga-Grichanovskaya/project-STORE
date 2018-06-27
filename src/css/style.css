@@ -387,8 +387,13 @@
 	.mobile-aside-toggle {
 		display: block;
 		color: #263238;
+	}
+	.mobile-aside-toggle.left {
 		margin-right: 10px;
-    }
+	}
+	.mobile-aside-toggle.right {
+		margin-bottom: 10px;
+	}
 	.close-mobile-aside {
         display: block;
         position: absolute;
