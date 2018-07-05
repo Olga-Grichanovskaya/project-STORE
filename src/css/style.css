@@ -378,12 +378,11 @@
     display: none;
 }
 @media (max-width: 1200px) {
-	.newest-release-prodcuts .card .card-author,
 	.trending-products .card .card-author {
 		width: 100%;
 	}
 }
-@media (max-width:991px) {
+@media (max-width: 991px) {
 	.mobile-aside-toggle {
 		display: block;
 		color: #263238;
@@ -444,8 +443,14 @@
     }
 }
 @media (max-width: 576px) {
+	.default-section {
+		padding: 75px 0 55px;
+	}
 	.title {
 		font-size: 2rem;
+	}
+	.trending-products .card .card-author {
+		width: 100%;
 	}
 }
 /* ==== Default component end ==== */
@@ -649,11 +654,11 @@
 	margin-left: 37px;
 }
 @media (max-width: 991px) {
-    .user-controls {
+    /* .user-controls {
         width: 100%;
         margin-left: 0;
         margin-top: 30px;
-	}
+	} */
 	.header-bottom .header-nav {
 		display: none;
 	}
@@ -668,7 +673,9 @@
 	}
 }
 @media (max-width: 767px) {
-
+	.dropdown-menu {
+		transform: translate3d(-10px, 28px, 0px) !important;
+	}
 }
 @media (max-width: 576px) {
 	.header-top .need-help span span {
@@ -683,6 +690,9 @@
 	.btn.logout-btn {
 		order: 2;
 	}
+	/* .dropdown-menu {
+		transform: translate3d(-10px, 28px, 0px) !important;
+	} */
 }
 
 /*=== Header end ===*/
@@ -777,8 +787,13 @@
 	.inner .inner-title {
 		font-size: 2.5rem;
 	}
+	.inner .inner-subtitle,
+	.inner.small-inner .inner-subtitle {
+		font-size: 1.25rem;
+		padding: 0 15px;
+	}
 	.search-wrap {
-		max-width: 550px;
+		max-width: 520px;
 	}
 }
 @media (max-width: 576px) {
@@ -789,13 +804,8 @@
 	.inner .inner-title {
 		line-height: 3rem;
 	}
-	.inner .inner-subtitle,
-	.inner.small-inner .inner-subtitle {
-		font-size: 1.15rem;
-		padding: 0 15px;
-	}
 	.search-wrap {
-		max-width: 300px;
+		max-width: 260px;
 	}
 }
 /*=== Inner end ===*/
@@ -904,6 +914,9 @@
 	.sort-links a + a {
 		margin-left: 0;
 		margin-top: 10px;
+	}
+	.prodcuts-tabs .product-rating li {
+		font-size: .5rem;
 	}
 }
 /*=== Newest-release-prodcuts end ===*/
@@ -1257,10 +1270,6 @@
 .slick-slide .card {
 	margin-bottom: 0;
 }
-.slick-arrow.slick-next,
-.slick-arrow.slick-prev {
-	display: none !important;
-}
 .slick-dots{
 	display: flex;
 	position: absolute;
@@ -1281,6 +1290,22 @@
 }
 .slick-dots li.slick-active button {
 	background-color: #8bc34a;
+}
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+}
+.slick-arrow.slick-prev {
+	left: -5px;
+}
+.slick-arrow.slick-next {
+	right: -5px;
+}
+@media (max-width: 576px) {
+	.default-section.trending-products {
+		padding-bottom: 90px;
+	}
 }
 /* Trending-products end */
 /* Why choose market start */
@@ -1306,13 +1331,11 @@
 	font-size: .9375rem;
 	color: #b0bec5;	
 }
-@media (max-width: 767px) {
-	.advantage-text {
-		margin-bottom: 30px;
+@media (max-width: 991px) {
+	.why-choose-market .row .col-12 + .col-12 {
+		margin-top: 30px;
 	}
 }
-
-
 /* Why choose market end */
 /* Become Author start */
 .default-section.become-author {
@@ -1344,15 +1367,42 @@
 		margin-bottom: 30px;
 	}
 }
+@media (max-width: 576px) {
+	.info-block {
+		flex-direction: column;
+		padding: 40px 15px 50px;
+	}
+	.info-block p {
+		font-size: 1.25rem;
+		text-align: center;
+	}
+	.info-block .btn-be-author {
+		padding: 5px 15px;
+	}
+}
 /* Become Author end */
 /* Free tutorials start */
 .default-section.free-tutorials {
 	padding: 115px 0 125px;
 }
+.tutorial-item .tutorial-img img{
+	width: 100%;
+}
 .tutorials-link {
 	font-family: 'robotobold', sans-serif;
 	font-size: 1.5rem;
     padding: 40px 10px;
+}
+@media (max-width: 767px) {
+	.free-tutorials .row .col-12 + .col-12 {
+		margin-top: 20px;
+	}
+
+}
+@media (max-width: 576px) {
+	.default-section.free-tutorials {
+		padding: 60px 0 65px;
+	}
 }
 /* Free tutorials end */
 /*==== Main end ==== */
@@ -1460,7 +1510,8 @@
     line-height: 1;
 }
 .copyright {
-	padding: 30px 0 25px;
+	padding-top: 30px;
+	padding-bottom: 25px;
 	border-top: 1px solid #424d53;
 	margin-top: 95px;
 }
@@ -1486,6 +1537,12 @@
 		transform: translateX(-50%);
 	}
 }
+@media (max-width: 576px) {
+	.address {
+		justify-content: center;
+	}
+}
+
 /* ==== Footer end ==== */
 
 /*==== Custom style end ====*/

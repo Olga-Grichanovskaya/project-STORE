@@ -33,26 +33,41 @@
             slidesToScroll: 4,
             responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
+                settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                dots: true,
+                arrows: false
+                }
+            },
+            {
+                breakpoint: 991,
                 settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: true,
+                arrows: false
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 767,
                 settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 2,
+                arrows: false
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 576,
                 settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: false,
+                prevArrow: '<div class="slick-prev slick-arrow"><i class="fa fa-chevron-left"></i></div>',
+                nextArrow: '<div class="slick-next slick-arrow"><i class="fa fa-chevron-right"></i></div>'
                 }
             }
             // You can unslick at a given breakpoint now by adding:
