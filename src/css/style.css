@@ -381,6 +381,10 @@
 	.trending-products .card .card-author {
 		width: 100%;
 	}
+	.aside-section {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 @media (max-width: 991px) {
 	.mobile-aside-toggle {
@@ -451,6 +455,9 @@
 	}
 	.trending-products .card .card-author {
 		width: 100%;
+	}
+	.card .card-author-info .product-rating li {
+		font-size: .5rem;
 	}
 }
 /* ==== Default component end ==== */
@@ -844,6 +851,17 @@
 .sort-view .fa-th-list {
 	color: #90a4ae;
 	cursor: pointer;
+}
+@media (max-width: 576px) {
+	.view-controls {
+		flex-wrap: wrap;
+	}
+	.sort-by {
+		order: 1;
+		width: 100%;
+		text-align: center;
+		margin-top: 15px;
+	}
 }
 /* === all-items end === */
 /*=== Newest-release-prodcuts start ===*/
