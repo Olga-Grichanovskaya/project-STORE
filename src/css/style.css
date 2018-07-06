@@ -459,6 +459,9 @@
 	.card .card-author-info .product-rating li {
 		font-size: .5rem;
 	}
+	.head-title {
+		font-size: 1.3rem;
+	}
 }
 /* ==== Default component end ==== */
 /*==== Custom style start ====*/
@@ -1558,6 +1561,9 @@
 @media (max-width: 576px) {
 	.address {
 		justify-content: center;
+	}
+	#footer {
+		padding-top: 50px;
 	}
 }
 
