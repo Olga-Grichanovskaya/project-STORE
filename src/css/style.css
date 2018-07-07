@@ -688,19 +688,24 @@
 	.dropdown-menu {
 		position: fixed !important;
 		right: 0;
-		top: 154px !important;
+		top: 114px !important;
 	}
 	.user-dropdown-control .dropdown-menu {
 		position: fixed !important;
 		right: 0;
-		top: 154px !important;
+		top: 114px !important;
 		text-align: center;
 	}
 }
-@media (max-width: 342px) {
+@media (max-width: 415px) {
 	.dropdown-menu {
-		top: 144px !important;
+		top: 145px !important;
 	}
+	.user-dropdown-control .dropdown-menu {
+		top: 155px !important;
+	}
+}
+@media (max-width: 342px) {
 	.user-dropdown-control .dropdown-menu {
 		top: 190px !important;
 	}
