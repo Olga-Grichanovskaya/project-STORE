@@ -470,9 +470,6 @@
 	padding-top: 26px;
 	padding-bottom: 26px;
 }
-.header-top .logo {
-	padding: 5px;
-}
 .header-top .need-help {
 	font-family: 'robotoregular', sans-serif;
 	font-size: .9375rem;
@@ -506,16 +503,17 @@
 }
 .user-dropdown-control {
 	position: relative;
+	height: 34px;
 }
 .dropdown-menu {
     position: absolute;
     display: none;
     background-color: #fff;
-    z-index: 99;
+    z-index: 901;
     border: 1px solid #d3d3d3;
     min-width: 270px;
 	right: 0;
-	top: 32px !important;
+	transform: translate3d(-236px, 60px, 0px) !important;
 	box-shadow: 0 12px 20px rgba(0, 0, 0, .2);
 }
 .dropdown-menu.show {
@@ -524,8 +522,7 @@
 .user-dropdown-control .dropdown-menu {
 	min-width: 160px;
 	padding: 25px 20px;
-	top: 25px !important;
-	left: 20px !important;
+	transform: translate3d(-38px, 60px, 0px) !important;
 }
 .user-dropdown-control .dropdown-menu .default-chevron-list li + li {
 	margin-top: 15px;
@@ -664,27 +661,20 @@
 	margin-left: 37px;
 }
 @media (max-width: 991px) {
-    /* .user-controls {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 30px;
-	} */
+    .user-controls {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 30px;
+	}
 	.header-bottom .header-nav {
 		display: none;
 	}
 	.slicknav_menu {
 		display: block;
 	}
-	.dropdown-menu {
-		transform: translate3d(-10px, 34px, 0px) !important;
-	}
+	.dropdown-menu,
 	.user-dropdown-control .dropdown-menu {
-		transform: translate3d(-20px, 47px, 0px) !important;
-	}
-}
-@media (max-width: 767px) {
-	.dropdown-menu {
-		transform: translate3d(-10px, 28px, 0px) !important;
+		transform: translate3d(0px, 60px, 0px)!important;
 	}
 }
 @media (max-width: 576px) {
@@ -693,16 +683,27 @@
 		margin-top: 10px;
 	}
 	.user-dropdown-control {
-		order: 1;
-		width: 100%;
 		margin: 20px 0;
 	}
-	.btn.logout-btn {
-		order: 2;
+	.dropdown-menu {
+		position: fixed !important;
+		right: 0;
+		top: 154px !important;
 	}
-	/* .dropdown-menu {
-		transform: translate3d(-10px, 28px, 0px) !important;
-	} */
+	.user-dropdown-control .dropdown-menu {
+		position: fixed !important;
+		right: 0;
+		top: 154px !important;
+		text-align: center;
+	}
+}
+@media (max-width: 342px) {
+	.dropdown-menu {
+		top: 144px !important;
+	}
+	.user-dropdown-control .dropdown-menu {
+		top: 190px !important;
+	}
 }
 
 /*=== Header end ===*/
@@ -1627,7 +1628,5 @@
 		padding-top: 50px;
 	}
 }
-
 /* ==== Footer end ==== */
-
 /*==== Custom style end ====*/
