@@ -33,6 +33,16 @@
             slidesToScroll: 4,
             responsive: [
             {
+                breakpoint: 1600,
+                settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                dots: true,
+                arrows: false
+                }
+            },
+            {
                 breakpoint: 1200,
                 settings: {
                 slidesToShow: 4,
